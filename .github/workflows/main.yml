@@ -31,6 +31,6 @@ jobs:
 
     - name: Build and push Docker image to docker-hub
       run: |
-          echo "Building and pushing $service"
+          echo "Building and pushing catalogue-service"
           chmod +x ./gradlew
           ./gradlew clean build jib --image=docker.io/${{ secrets.DOCKER_USERNAME }}/catalogue-service:latest
