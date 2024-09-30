@@ -33,4 +33,4 @@ jobs:
       run: |
           echo "Building and pushing $service"
           chmod +x ./gradlew
-          ./gradlew clean build jib --image=docker.io/${{ secrets.DOCKER_USERNAME }}/$service:latest
+          ./gradlew clean build jib --image=docker.io/${{ secrets.DOCKER_USERNAME }}/catalogue-service:latest
